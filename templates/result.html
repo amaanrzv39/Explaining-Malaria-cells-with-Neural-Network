@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grad-CAM and Prediction Result</h1>
+        <div class="result">
+            <h2>Original Image | Grad-CAM output</h2>
+            <div class="image-container">
+                <img src="data:image/png;base64,{{ image }}" alt="Original Image">
+                <img src="data:image/png;base64,{{ grid }}" alt="Gradcam Image">
+            </div>
+            
+            <div class="prediction">
+                <p><strong>Predicted Class:</strong> {{ prediction }}</p>
+                <p><strong>Prediction Confidence:</strong> {{ prediction_score }}</p>
+            </div>
+            <button class="go-back-btn" onclick="window.history.back();">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

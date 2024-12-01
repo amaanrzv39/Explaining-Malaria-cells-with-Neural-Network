@@ -1,0 +1,95 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Upload Form Styling (for index.html) */
+.upload-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result Section Styling (for result.html) */
+.result {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Flexbox to display images side by side */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Image Name Styling */
+.image-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Image Styling */
+img {
+    width: 30%;
+    margin: 10px 0;
+    max-height: 400px;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Prediction Text Styling */
+.prediction {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Go Back Button Styling */
+.go-back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.go-back-btn:hover {
+    background-color: #0056b3;
+}
